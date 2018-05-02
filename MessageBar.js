@@ -148,7 +148,7 @@ class MessageBar extends Component {
       /* Padding around the content, useful if you want a tiny message bar */
       messageBarPadding: props.messageBarPadding || def.messageBarPadding || 10,
       
-      zIndex: props.zIndex || 0,
+      zIndex: props.zIndex || def.zIndex || 10000,
 
       /* Number of Lines for Title and Message */
       titleNumberOfLines:
