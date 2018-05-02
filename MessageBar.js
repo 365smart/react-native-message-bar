@@ -513,6 +513,7 @@ class MessageBar extends Component {
     if (this.state.title != null) {
       return (
         <Text
+          accessibilityLabel="MessageBar.Title"
           numberOfLines={this.state.titleNumberOfLines}
           style={[this.state.titleStyle, {color: this.state.titleColor}]}>
           {this.state.title}
