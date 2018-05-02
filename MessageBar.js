@@ -147,6 +147,8 @@ class MessageBar extends Component {
 
       /* Padding around the content, useful if you want a tiny message bar */
       messageBarPadding: props.messageBarPadding || def.messageBarPadding || 10,
+      
+      zIndex: props.zIndex || 0,
 
       /* Number of Lines for Title and Message */
       titleNumberOfLines:
@@ -452,7 +454,8 @@ class MessageBar extends Component {
           paddingTop: this.state.viewTopInset,
           paddingBottom: this.state.viewBottomInset,
           paddingLeft: this.state.viewLeftInset,
-          paddingRight: this.state.viewRightInset
+          paddingRight: this.state.viewRightInset,
+          zIndex: this.state.zIndex,
         }}>
         <TouchableOpacity
           onPress={() => {
